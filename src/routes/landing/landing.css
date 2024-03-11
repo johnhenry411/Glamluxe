@@ -3,9 +3,9 @@
     width: 80%;
     left: 10%;
     padding-top: 40px;
-    padding-bottom: 0;
+    padding-bottom: 140px;
     border-radius: 20px;
-    position: absolute;
+    position: relative;
 }
 
 .landing .hero h2 {
@@ -36,10 +36,10 @@
     }
     .landing .hero {
         height: 50vh;
-        width: 80%;
-        left: 10%;
+        width: 100%;
+        left: 0%;
         padding-top: 50px;
-        padding-bottom: 40px;
+        padding-bottom: 110px;
         border-radius: 20px;
         position: relative;
     }
@@ -84,7 +84,7 @@
 .landing .grid .grid-three,
 .landing .grid .grid-four,
 .landing .grid .grid-five {
-    width: 100%;
+    width: 40%;
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
@@ -113,7 +113,7 @@
 }
 
 .grid-one {
-    grid-area: 1 / 1 / 2 / 4;
+    grid-area: 1 / 1 / 2 / 10;
     background-image: url("../../assets/images/landing-images/gridOne.jpeg");
 }
 
