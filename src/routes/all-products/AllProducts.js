@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Product from "./Product.js";
-import CategoryAllHero from '../../assets/images/product-listing-images/category-all-hero.mp4'
-import CategoryDressesHero from '../../assets/images/product-listing-images/category-dresses-hero.mp4'
-import CategoryBlousesHero from '../../assets/images/product-listing-images/category-blouses-hero.mp4'
-import CategoryShoesHero from '../../assets/images/product-listing-images/category-shoes-hero.mp4'
-import CategoryJeansHero from '../../assets/images/product-listing-images/category-jeans-hero.mp4'
+import CategoryAllHero from '../../assets/images/product-listing-images/all_images.jpg'
+import CategoryDuvetsHero from '../../assets/images/product-listing-images/Duvets-category.jpg'
+import CategoryCarpetsHero from '../../assets/images/product-listing-images/Carpets-category.jpg'
+import CategoryCutleryHero from '../../assets/images/product-listing-images/Cutlery-category.jpg'
+import CategoryShoesHero from '../../assets/images/product-listing-images/category-jeans-hero.mp4'
 import "./all-products.css";
 
 
@@ -32,10 +32,8 @@ const AllProducts = ({ allProducts,
   return (
     <article>
       <article className="products-hero">
-        <h2>{activeCategory === 'all' ? "Boost your style sense!" : activeCategory === 'dresses' ? "Let's create your own style" : activeCategory === 'blouses' ? "The joy of dressing" : activeCategory === 'shoes' ? "Unlock your style" : activeCategory === 'jeans' ? "Fashion never sleeps" : "Boost your style sense!"}</h2>
-        <video autoPlay loop muted playsInline key={activeCategory}>
-          <source src={activeCategory === 'all' ? CategoryAllHero : activeCategory === 'dresses' ? CategoryDressesHero : activeCategory === 'blouses' ? CategoryBlousesHero : activeCategory === 'shoes' ? CategoryShoesHero : activeCategory === 'jeans' ? CategoryJeansHero : CategoryAllHero} type="video/mp4" />
-        </video>
+        <h2>{activeCategory === 'all Products' ? "Bringing the luxury to your doorstep!" : activeCategory === 'duvets' ? "Let's create your own style" : activeCategory === 'carpets' ? "The joy of dressing" : activeCategory === 'cutlery' ? "Unlock your style" : activeCategory === 'shoes' ? "Fashion never sleeps" : "Boost your style sense!"}</h2>
+        <img src={activeCategory === 'all' ? CategoryAllHero : activeCategory === 'duvets' ? CategoryDuvetsHero : activeCategory === 'carpets' ? CategoryCarpetsHero : activeCategory === 'cutlery' ? CategoryCutleryHero : activeCategory === 'jeans' ? CategoryShoesHero : CategoryAllHero} alt={`${activeCategory} Hero`} />
       </article>
       <article className="product-listing-page">
         <h3 className="active-category">{activeCategory}</h3>
